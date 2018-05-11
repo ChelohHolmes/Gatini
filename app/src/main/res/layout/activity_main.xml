@@ -131,6 +131,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:id="@+id/nJug"
                     android:src="@drawable/ic_panorama_fish_eye_white_30dp" />
             </LinearLayout>
         </LinearLayout>
@@ -154,7 +155,8 @@
                 android:layout_height="match_parent"
                 android:background="@color/primaryColor"
                 android:textColor="#FFFFFF"
-                android:text="Reiniciar"
+                android:text="Nuevo juego"
+                android:id="@+id/Nuevo"
                 android:drawableLeft="@drawable/ic_replay_black_24dp" />
         </LinearLayout>
 
