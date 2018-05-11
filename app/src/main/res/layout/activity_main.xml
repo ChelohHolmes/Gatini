@@ -1,18 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
 
-    <TextView
-        android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/primaryColor"
+            android:text="Gatini"
+            android:gravity="center"
+            android:typeface="serif"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="40dp" />
+
+
+    </LinearLayout>
+    <GridLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:rowCount="3"
+        android:columnCount="3"
+        android:background="@color/primaryColor"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/b1x1"
+            android:layout_height="120dp"
+            android:layout_width="120dp"
+            android:onClick="Turno"
+            android:text=" "
+            android:tag="0"
+            />
+        <Button
+            android:id="@+id/b2x1"
+            android:layout_height="120dp"
+            android:layout_width="120dp"
+            android:onClick="Turno"
+            android:text=" "
+            android:tag="3"
+            />
+        <Button
+            android:id="@+id/b3x1"
+            android:layout_height="120dp"
+            android:layout_width="120dp"
+            android:onClick="Turno"
+            android:text=" "
+            android:tag="6"
+            />
+        <Button
+            android:id="@+id/b1x2"
+            android:layout_height="120dp"
+            android:layout_width="120dp"
+            android:layout_gravity="center"
+            android:onClick="Turno"
+            android:text=" "
+            android:tag="1"
+            />
+        <Button
+            android:id="@+id/b2x2"
+            android:layout_height="120dp"
+            android:layout_width="120dp"
+            android:onClick="Turno"
+            android:text=" "
+            android:tag="4"
+            />
+        <Button
+            android:id="@+id/b3x2"
+            android:layout_height="120dp"
+            android:layout_width="120dp"
+            android:onClick="Turno"
+            android:text=" "
+            android:tag="7"
+            />
+        <Button
+            android:id="@+id/b1x3"
+            android:layout_height="120dp"
+            android:layout_width="120dp"
+            android:onClick="Turno"
+            android:text=" "
+            android:tag="2"
+            />
+        <Button
+            android:id="@+id/b2x3"
+            android:layout_height="120dp"
+            android:layout_width="120dp"
+            android:onClick="Turno"
+            android:text=" "
+            android:tag="5"
+            />
+        <Button
+            android:id="@+id/b3x3"
+            android:layout_height="120dp"
+            android:layout_width="120dp"
+            android:onClick="Turno"
+            android:text=" "
+            android:tag="8"
+            />
+    </GridLayout>
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/primaryColor"
+                android:text="Turno:"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/primaryColor"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_panorama_fish_eye_white_30dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Ganador"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/primaryColor"
+            android:textAlignment="center"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/primaryColor">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/primaryColor"
+                android:textColor="#FFFFFF"
+                android:text="Reiniciar"
+                android:drawableLeft="@drawable/ic_replay_black_24dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
